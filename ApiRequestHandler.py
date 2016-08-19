@@ -12,7 +12,6 @@ def RecieveProblem(url):
 # POST request to the url meant to validate stages.
 def ValidateProblem(url, key, value):
     my_dictionary ={'token' : TOKEN, key : value}
-    print(my_dictionary)
     output = requests.post(url, json=my_dictionary);
     print(output.text)
 
