@@ -9,9 +9,10 @@ def RecieveProblem(url):
 
 def ValidateProblem(url, key, value):
     my_dictionary ={'token' : TOKEN, key : value}
-    output = requests.post(url, data=my_dictionary);
+    print(my_dictionary)
+    output = requests.post(url, json=my_dictionary);
     print(output.text)
 
 def JsonLoader(text):
-    dictionary = Json.Loads(text)
+    dictionary = json.loads(text)
     return dictionary
