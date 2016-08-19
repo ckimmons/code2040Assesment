@@ -6,6 +6,6 @@ VALIDATE_URL = 'http://challenge.code2040.org/api/haystack/validate'
 
 text = RecieveProblem(REQUEST_URL)
 dictionary = JsonLoader(text)
-listOfStrings = dictionary.get('haystack')
-index = listOfStrings.index(dictionary.get("needle"))
+list_of_strings = dictionary.get('haystack')
+index = list_of_strings.index(dictionary.get("needle"))
 ValidateProblem(VALIDATE_URL, 'needle', index)
