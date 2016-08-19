@@ -1,4 +1,4 @@
-#H3 CODE2040 Technical Assessment
+### CODE2040 Technical Assessment
 
 The code that handles API requests is in ApiRequestHandler.py.
 The APIs I used are:
