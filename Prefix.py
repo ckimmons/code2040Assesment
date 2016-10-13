@@ -3,7 +3,7 @@ from ApiRequestHandler import RecieveProblem, ValidateProblem, JsonLoader
 REQUEST_URL = 'http://challenge.code2040.org/api/prefix'
 VALIDATE_URL = 'http://challenge.code2040.org/api/prefix/validate'
 
-text = RecieveProblem(REQUEST_URL)
+text = ReceiveProblem(REQUEST_URL)
 dictionary = JsonLoader(text)
 prefix = dictionary.get('prefix')
 listOfWords = dictionary.get('array')
