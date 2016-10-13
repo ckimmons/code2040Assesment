@@ -9,7 +9,7 @@ VALIDATE_URL = 'http://challenge.code2040.org/api/reverse/validate'
 def ReverseAString(string):
     return string[::-1]
 
-string = RecieveProblem(REQUEST_URL)
+string = ReceiveProblem(REQUEST_URL)
 reverse = ReverseAString(string)
 
 ValidateProblem(VALIDATE_URL, 'string', reverse)
