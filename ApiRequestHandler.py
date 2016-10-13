@@ -3,7 +3,7 @@ import json
 TOKEN = '0bb28905c84012d47d113eb090120e12'
 
 # Recieves a string from the CODE2040 assessment server.
-def RecieveProblem(url):
+def ReceiveProblem(url):
     my_dictionary = {'token': TOKEN}
     request = requests.post(url, data=my_dictionary);
     return request.text
