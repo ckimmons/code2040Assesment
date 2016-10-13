@@ -24,7 +24,7 @@ def AddIntervalToDate(date_string, interval):
     return new_date
 
 
-text = RecieveProblem(REQUEST_URL)
+text = ReceiveProblem(REQUEST_URL)
 dictionary = JsonLoader(text)
 date = dictionary.get('datestamp')
 interval = dictionary.get('interval')
